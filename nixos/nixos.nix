@@ -3,10 +3,10 @@
   lib,
   ...
 }: let
-  username = "demeter";
+  username = "akshit";
 in {
   imports = [
-    /etc/nixos/hardware-configuration.nix
+    ./hardware-configuration.nix
     ./system.nix
     ./audio.nix
     ./locale.nix

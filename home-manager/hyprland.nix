@@ -61,7 +61,7 @@ in {
       };
 
       input = {
-        kb_layout = "hu,us";
+        kb_layout = "us";
         follow_mouse = 1;
         touchpad = {
           natural_scroll = "yes";
@@ -117,7 +117,7 @@ in {
       in
         [
           "CTRL SHIFT, R,  ${e} quit; ags -b hypr"
-          "SUPER, R,       ${e} -t launcher"
+          "SUPER, D,       ${e} -t launcher"
           "SUPER, Tab,     ${e} -t overview"
           ",XF86PowerOff,  ${e} -r 'powermenu.shutdown()'"
           ",XF86Launch4,   ${e} -r 'recorder.start()'"
@@ -132,7 +132,7 @@ in {
 
           "ALT, Tab, focuscurrentorlast"
           "CTRL ALT, Delete, exit"
-          "ALT, Q, killactive"
+          "SUPER, Q, killactive"
           "SUPER, F, togglefloating"
           "SUPER, G, fullscreen"
           "SUPER, O, fakefullscreen"

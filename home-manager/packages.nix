@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./modules/packages.nix
+    ./modules/gaming.nix
     ./scripts/blocks.nix
     ./scripts/nx-switch.nix
     ./scripts/vault.nix
@@ -17,6 +18,11 @@
       # yabridgectl
       # wine-staging
       nodejs
+      godot_4
+      cloudflare-warp
+      direnv
+      stremio
+      kmymoney
     ];
     cli = [
       bat

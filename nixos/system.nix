@@ -1,4 +1,9 @@
 {pkgs, ...}: {
+  # nvidia
+  imports = [
+    ./nvidia.nix
+    ./gaming.nix
+  ];
   # nix
   documentation.nixos.enable = false; # .desktop
   nixpkgs.config.allowUnfree = true;

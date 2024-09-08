@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   imports = [
     ./modules/packages.nix
-    ./modules/gaming.nix
     ./scripts/blocks.nix
     ./scripts/nx-switch.nix
     ./scripts/vault.nix
@@ -23,6 +22,13 @@
       direnv
       stremio
       kmymoney
+      onlyoffice-bin
+      floorp
+      signal-desktop
+      appimage-run
+      keepassxc
+      telegram-desktop
+      obsidian
     ];
     cli = [
       bat

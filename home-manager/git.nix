@@ -1,5 +1,5 @@
 let
-  name = "Aylur";
+  name = "Akshit Gaur";
 in {
   programs.git = {
     enable = true;
@@ -10,7 +10,7 @@ in {
       github.user = name;
       push.autoSetupRemote = true;
     };
-    userEmail = "k.demeter@protonmail.com";
+    userEmail = "akshitgaur@protonmail.com";
     userName = name;
   };
   programs.ssh = {

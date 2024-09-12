@@ -43,6 +43,7 @@ in {
       iconTheme.package
       adwaita-icon-theme
       papirus-icon-theme
+      noto-fonts
     ];
     sessionVariables = {
       XCURSOR_THEME = cursorTheme.name;

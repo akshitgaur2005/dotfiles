@@ -29,6 +29,8 @@
       keepassxc
       telegram-desktop
       obsidian
+      easyeffects
+      amberol
     ];
     cli = [
       bat

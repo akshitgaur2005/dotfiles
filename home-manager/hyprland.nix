@@ -41,7 +41,7 @@ in {
       exec-once = [
         "ags -b hypr"
         "hyprctl setcursor Qogir 24"
-        "fragments"
+        "easyeffects --gapplication-service"
       ];
 
       monitor = [
@@ -92,7 +92,7 @@ in {
         f = regex: "float, ^(${regex})$";
       in [
         (f "org.gnome.Calculator")
-        (f "org.gnome.Nautilus")
+        # (f "org.gnome.Nautilus")
         (f "pavucontrol")
         (f "nm-connection-editor")
         (f "blueberry.py")
@@ -101,7 +101,7 @@ in {
         (f "Color Picker")
         (f "xdg-desktop-portal")
         (f "xdg-desktop-portal-gnome")
-        (f "de.haeckerfelix.Fragments")
+        #(f "de.haeckerfelix.Fragments")
         (f "com.github.Aylur.ags")
         "workspace 7, title:Spotify"
       ];
@@ -121,7 +121,7 @@ in {
           "SUPER, D,       ${e} -t launcher"
           "SUPER, Tab,     ${e} -t overview"
           ",XF86PowerOff,  ${e} -r 'powermenu.shutdown()'"
-          ",XF86Launch4,   ${e} -r 'recorder.start()'"
+          "SUPER, R,   ${e} -r 'recorder.start()'"
           ",Print,         exec, ${screenshot}"
           "SHIFT,Print,    exec, ${screenshot} --full"
           "SUPER, Return, exec, xterm" # xterm is a symlink, not actually xterm
@@ -136,7 +136,7 @@ in {
           "SUPER, Q, killactive"
           "SUPER, F, togglefloating"
           "SUPER, G, fullscreen"
-          "SUPER, O, fakefullscreen"
+          #"SUPER, O, fakefullscreen"
           "SUPER, P, togglesplit"
 
           (mvfocus "k" "u")
@@ -223,7 +223,7 @@ in {
           exitOnClick = true;
           exitOnSwitch = true;
           drawActiveWorkspace = true;
-          reverseSwipe = true;
+          reverseSwipe = false;
         };
         hyprbars = {
           bar_color = "rgb(2a2a2a)";

@@ -69,4 +69,6 @@ in {
       gnome.enable = true;
     };
   };
+
+  nix.settings.trusted-users = ["root" "${username}"];
 }

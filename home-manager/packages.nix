@@ -11,8 +11,8 @@
       (mpv.override {scripts = [mpvScripts.mpris];})
       spotify
       # gnome-secrets
-      fragments
       figma-linux
+      qbittorrent
       # yabridge
       # yabridgectl
       # wine-staging
@@ -30,7 +30,9 @@
       telegram-desktop
       obsidian
       easyeffects
-      amberol
+      elisa
+      nextcloud-client
+      krita
     ];
     cli = [
       bat
@@ -40,6 +42,8 @@
       fzf
       lazydocker
       lazygit
+      alejandra
+      devenv
     ];
   };
 }

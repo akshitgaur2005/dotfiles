@@ -9,9 +9,7 @@
   packages = with pkgs; {
     linux = [
       (mpv.override {scripts = [mpvScripts.mpris];})
-      spotify
       # gnome-secrets
-      figma-linux
       qbittorrent
       # yabridge
       # yabridgectl
@@ -23,7 +21,6 @@
       stremio
       kmymoney
       onlyoffice-bin
-      floorp
       signal-desktop
       appimage-run
       keepassxc
@@ -33,6 +30,8 @@
       elisa
       nextcloud-client
       krita
+      tor
+      tor-browser
     ];
     cli = [
       bat
@@ -43,7 +42,7 @@
       lazydocker
       lazygit
       alejandra
-      devenv
+      cachix
     ];
   };
 }
